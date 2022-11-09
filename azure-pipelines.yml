@@ -29,3 +29,9 @@ steps:
     orchestratorConnection: 'Uipath_orc'
     packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
     folderName: 'Modren Example'
+- task: UiPathTest@2
+  inputs:
+    testTarget: 'TestProject'
+    orchestratorConnection: 'Uipath_orc'
+    testProjectPath: '$(Build.ArtifactStagingDirectory)\Output'
+    folderName: 'Modren Example'
