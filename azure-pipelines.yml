@@ -33,5 +33,5 @@ steps:
   inputs:
     testTarget: 'TestProject'
     orchestratorConnection: 'Uipath_orc'
-    testProjectPath: '$(Build.ArtifactStagingDirectory)\Output'
+    testProjectPath: '$(Build.SourcesDirectory)'
     folderName: 'Modren Example'
